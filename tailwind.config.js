@@ -5,19 +5,27 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '20px'
+    },
     extend: {
       fontFamily: {
-        spaceGrotesk: ["Space Grotesk", "sans-serif"]
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        ultra: ["Ultra", "sans-serif"],
+        bree: ["Bree Serif", "sans-serif"],
+        abril: ["Abril Fatface", "sans-serif"]
       },
       colors: {
-        primary: '#FEF9EF',
-        secondary: '#B31312',
+        primary: '#FAEEE7',
+        secondary: '#B33030',
         dark: '#151515',
         tertiary: '#EA906C'
       },
       screens: {
         '2xl' : '1320px'
-      }
+      },
+      
     },
   },
   plugins: [],
