@@ -4,12 +4,13 @@ import Portfolio2 from "../assets/img/portf-3.png";
 import Portfolio3 from "../assets/img/portf-4.png";
 import Portfolio4 from "../assets/img/portf-5.png";
 import gsap from "gsap";
+import { useEffect } from "react";
 
 export const Portfolio = () => {
-  const sectionRef = useRef();
-  const triggerRef = useRef();
+  const sectionRef = useRef(null);
+  const triggerRef = useRef(null);
 
-  useRef(() => {
+  useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
@@ -32,6 +33,8 @@ export const Portfolio = () => {
       pin.kill();
     };
   }, []);
+
+  
   return (
     <>
       <div className="bg-secondary px-4 lg:px-12 pt-12 ">
@@ -121,6 +124,7 @@ export const Portfolio = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };

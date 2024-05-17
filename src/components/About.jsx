@@ -5,7 +5,7 @@ import gsap from "gsap";
 import Circle from "../assets/img/circle.svg";
 
 export const About = () => {
-  const rotatingSvg = useRef();
+  const rotatingSvg = useRef(null);
 
   useEffect(() => {
     gsap.to(rotatingSvg.current, {

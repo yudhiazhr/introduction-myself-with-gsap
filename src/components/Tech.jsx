@@ -16,7 +16,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 
 export const TechStack = () => {
-  const marqueeText = useRef();
+  const marqueeText = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       marqueeText.current,
